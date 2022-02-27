@@ -53,15 +53,25 @@ Hyper-V
  ```
 临时解决方案: 以管理员身份运行 netsh winsock reset
 永久解决方案: 以管理员身份运行 .\NoLsp.exe ‪C:\Windows\System32\wsl.exe
-```
- 8. 设置默认用户
+ ```
+
+ 8. 设置root用户密码，root默认没有设置密码，所以需要设置,参考：[Windows linux子系统WSL使用root用户登录](https://blog.csdn.net/weixin_44953227/article/details/109466253)
+ ```
+ # 语法: sudo passwd 用户名
+ sudo passwd root
+
+ # 语法: su 用户名
+ su root
+ ```
+ 
+9. 设置默认使用用户,参考[Linux 的 Windows10 子系统 ubuntu 设置默认用户](https://blog.csdn.net/weixin_44953227/article/details/109465071)
 
 添加用户 us
 ```
-  adduser us
+adduser us
 ```
 设置默认用户为 us
 ```
-  Ubuntu-20.04 config --default-user us
+Ubuntu-20.04 config --default-user us
 ```
 不一定是 Ubuntu-18.04 , 执行 wsl --list 即可查看到, 也可能是 Ubuntu

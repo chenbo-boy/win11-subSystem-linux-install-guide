@@ -68,10 +68,10 @@ Hyper-V
 
 添加用户 us
 ```
-adduser us
+adduser chenbo
 ```
 设置默认用户为 us
 ```
-Ubuntu-20.04 config --default-user us
+ubuntu2004.exe config  --default-user chenbo
 ```
-不一定是 Ubuntu-18.04 , 执行 wsl --list 即可查看到, 也可能是 Ubuntu
+不一定是 ubuntu2004 , 执行 wsl --list 即可查看到, 也可能是 Ubuntu

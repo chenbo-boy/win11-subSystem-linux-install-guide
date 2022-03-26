@@ -5,6 +5,7 @@
 + [二、账户设置](#账户设置)
 + [三、迁移子系统镜像位置](#迁移子系统镜像位置)
 + [四、window系统访问子系统文件目录](#window系统访问子系统文件目录)
+
 参考windows官方安装指南: [安装WSL](https://docs.microsoft.com/zh-cn/windows/wsl/install "安装WSL")
 
 
@@ -102,5 +103,5 @@ Hyper-V
 ### window系统访问子系统文件目录
 打开linux子系统命令行，输入explorer.exe .命令 ，然后就可以在Windows文件资源管理器中访问和管理Linux子系统中我们当前所处的文件路径下的文件。注意`.前面有个空格`
 
-[](explorer.png)
-[](查看linux系统文件.png)
+![](explorer.png)
+![](查看linux系统文件.png)

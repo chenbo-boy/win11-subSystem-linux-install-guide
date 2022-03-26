@@ -84,11 +84,12 @@ Hyper-V
 
 ### 迁移子系统镜像位置     
 
-   子系统镜像默认安装在C:\Users\11842\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState，未了减少系统盘空间占用，可以把他迁移到其他盘。   
+   子系统镜像默认安装在C:\Users\11842\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState，为了减少系统盘空间占用，可以把他迁移到其他盘。   
 
    有2中方式迁移：  
 
   1. 创建目录连接
+
   首先把`C:\Users\11842\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState`文件拷贝到其他盘,然后在cmd中执行：
   ```
   mklink /j "C:\Users\11842\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState" "E:\liunx.window\Ubuntu20.04\LocalState\"
